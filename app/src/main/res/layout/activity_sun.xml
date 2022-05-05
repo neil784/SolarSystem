@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sun">
+
+
+
+    <RelativeLayout
+        android:id="@+id/sun"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/stars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/mercury"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/starsflip"
+        android:fontFamily="casual"
+        android:text="Mercury"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sun"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/venus"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/stars"
+        android:fontFamily="casual"
+        android:text="Venus"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mercury"
+        app:layout_constraintVertical_bias="0.0" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/earth"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/starsflip"
+        android:fontFamily="casual"
+        android:text="Earth"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/mars"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/stars"
+        android:fontFamily="casual"
+        android:text="Mars"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earth"
+        app:layout_constraintVertical_bias="0.0" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jupiter"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/starsflip"
+        android:fontFamily="casual"
+        android:text="Jupiter"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mars"
+        app:layout_constraintVertical_bias="0.0" >
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saturn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/stars"
+        android:fontFamily="casual"
+        android:text="Saturn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jupiter"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/uranus"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/starsflip"
+        android:fontFamily="casual"
+        android:text="Uranus"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/neptune"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/stars"
+        android:fontFamily="casual"
+        android:text="Neptune"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uranus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/pluto"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/starsflip"
+        android:fontFamily="casual"
+        android:text="Pluto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neptune"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="@+id/earth"
+        app:layout_constraintEnd_toEndOf="@+id/mercury"
+        app:layout_constraintStart_toStartOf="@+id/mercury"
+        app:layout_constraintTop_toTopOf="@+id/sun"
+        app:srcCompat="@drawable/sunimage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/sunInfo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/neptune"
+        app:layout_constraintEnd_toEndOf="@+id/saturn"
+        app:layout_constraintStart_toStartOf="@+id/saturn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

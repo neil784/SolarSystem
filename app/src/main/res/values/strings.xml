@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">The Solar System</string>
+    <string name="sunInfo">Our Sun, the heart of the solar system, is a yellow dwarf star. Its
+        gravity holds everything from small debris to large planets in orbit. Electric current
+        in the Sun propagates the electromagnetic field in the form of solar winds.</string>
+    <string name="mercuryInfo">Mercury, the closest planet to the Sun, is only slightly larger than
+        Earth\'s Moon. Mercury is the fastest planet, completing its orbit around the Sun every
+        88 Earth days.</string>
+    <string name="venusInfo">Venus, the second planet from the Sun, spins in the opposite direction
+        from most planets. Venus\'s thick atmosphere traps heat in a runaway greenhouse effect,
+        making it the hottest planet in our solar system.</string>
+    <string name="earthInfo">Earth, our home planet, is the only place we know of so far that\'s
+        inhabited by intelligent life. It\'s also the only planet in our solar system with liquid
+        water on the surface.</string>
+    <string name="marsInfo">Mars is a dusty, cold, desert world with a very thin atmosphere. There
+        is strong evidence Mars was wetter and warmer, with a thicker atmosphere billions of
+        years ago.</string>
+    <string name="jupiterInfo">Jupiter is more than twice as massive than the other planets of our
+        solar system combined. The giant planet\'s Great Red spot is a centuries-old storm
+        larger than the Earth.</string>
+    <string name="saturnInfo">Adorned with a dazzling, complex system of icy rings, Saturn is
+        unique in our solar system. The other giant planets have rings, but none are as spectacular
+        as Saturn\'s.</string>
+    <string name="uranusInfo">Uranus, the seventh planet from the sun, rotates at a nearly
+        90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin
+        on its side.</string>
+    <string name="neptuneInfo">Neptune, the eighth and most distant planet orbiting our Sun,
+        is dark, cold and whipped by supersonic winds. It was the first planet discovered through
+        mathematical prediction.</string>
+    <string name="plutoInfo">Pluto is a complex world of ice mountains and frozen plains. Once
+        considered to be the ninth planet, Pluto is best known for a new classification called
+        dwarf planets.</string>
+</resources>
