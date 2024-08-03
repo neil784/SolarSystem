@@ -49,6 +49,13 @@ public class Sun extends AppCompatActivity {
     private void onSwipeUp() {
         Intent intent = new Intent(Sun.this, Mercury.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);  // Optional: Add custom animations
+        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Sun.this, MainPage.class);
+        startActivity(intent);
     }
 }
