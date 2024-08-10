@@ -55,12 +55,14 @@ public class Earth extends AppCompatActivity {
         Intent intent = new Intent(Earth.this, Mars.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+        finish();
     }
 
     private void onSwipeDown() {
         Intent intent = new Intent(Earth.this, Venus.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_down, R.anim.slide_out_down);
+        finish();
     }
 
     @Override
@@ -68,5 +70,6 @@ public class Earth extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Earth.this, MainPage.class);
         startActivity(intent);
+        finish();
     }
 }

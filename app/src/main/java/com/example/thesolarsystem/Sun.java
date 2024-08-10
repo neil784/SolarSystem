@@ -50,6 +50,7 @@ public class Sun extends AppCompatActivity {
         Intent intent = new Intent(Sun.this, Mercury.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+        finish();
     }
 
     @Override
@@ -57,5 +58,6 @@ public class Sun extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Sun.this, MainPage.class);
         startActivity(intent);
+        finish();
     }
 }

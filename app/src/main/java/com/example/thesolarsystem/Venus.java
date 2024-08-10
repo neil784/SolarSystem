@@ -55,12 +55,14 @@ public class Venus extends AppCompatActivity {
         Intent intent = new Intent(Venus.this, Earth.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+        finish();
     }
 
     private void onSwipeDown() {
         Intent intent = new Intent(Venus.this, Mercury.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_down, R.anim.slide_out_down);
+        finish();
     }
 
     @Override
@@ -68,5 +70,6 @@ public class Venus extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Venus.this, MainPage.class);
         startActivity(intent);
+        finish();
     }
 }

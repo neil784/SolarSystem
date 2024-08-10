@@ -51,6 +51,7 @@ public class Pluto extends AppCompatActivity {
         Intent intent = new Intent(Pluto.this, Neptune.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_down, R.anim.slide_out_down);
+        finish();
     }
 
     @Override
@@ -58,5 +59,6 @@ public class Pluto extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Pluto.this, MainPage.class);
         startActivity(intent);
+        finish();
     }
 }
