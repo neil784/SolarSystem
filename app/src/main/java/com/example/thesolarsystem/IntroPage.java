@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class IntroPage extends AppCompatActivity {
-    private float x1, x2, y1, y2;
+    private float y1, y2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +27,15 @@ public class IntroPage extends AppCompatActivity {
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                x1 = touchevent.getX();
                 y1 = touchevent.getY();
                 break;
             case MotionEvent.ACTION_UP:
-                x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (y1 > y2) {
                     Intent intent = new Intent(IntroPage.this, MainPage.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+                    finish();
                 }
                 break;
         }

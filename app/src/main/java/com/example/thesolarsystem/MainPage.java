@@ -29,6 +29,7 @@ public class MainPage extends AppCompatActivity {
     private ImageButton uranus;
     private ImageButton neptune;
     private ImageButton pluto;
+    boolean backPressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,81 +51,55 @@ public class MainPage extends AppCompatActivity {
         neptune = findViewById(R.id.neptune);
         pluto = findViewById(R.id.pluto);
 
-        sun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Sun.class);
-                startActivity(intent);
-            }
+        sun.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Sun.class);
+            startActivity(intent);
         });
-        mercury.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Mercury.class);
-                startActivity(intent);
-            }
+        mercury.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Mercury.class);
+            startActivity(intent);
         });
-        venus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Venus.class);
-                startActivity(intent);
-            }
+        venus.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Venus.class);
+            startActivity(intent);
         });
-        earth.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Earth.class);
-                startActivity(intent);
-            }
+        earth.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Earth.class);
+            startActivity(intent);
         });
-        mars.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Mars.class);
-                startActivity(intent);
-            }
+        mars.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Mars.class);
+            startActivity(intent);
         });
-        jupiter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Jupiter.class);
-                startActivity(intent);
-            }
+        jupiter.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Jupiter.class);
+            startActivity(intent);
         });
-        saturn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Saturn.class);
-                startActivity(intent);
-            }
+        saturn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Saturn.class);
+            startActivity(intent);
         });
-        uranus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Uranus.class);
-                startActivity(intent);
-            }
+        uranus.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Uranus.class);
+            startActivity(intent);
         });
-        neptune.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Neptune.class);
-                startActivity(intent);
-            }
+        neptune.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Neptune.class);
+            startActivity(intent);
         });
-        pluto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainPage.this, Pluto.class);
-                startActivity(intent);
-            }
+        pluto.setOnClickListener(v -> {
+            Intent intent = new Intent(MainPage.this, Pluto.class);
+            startActivity(intent);
         });
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(MainPage.this, IntroPage.class);
-        startActivity(intent);
+        if (backPressed) {
+            finishAffinity();
+            System.exit(0);
+        }
+        Toast.makeText(this, "Back one more time to exit", Toast.LENGTH_SHORT).show();
+        backPressed = true;
     }
 }
